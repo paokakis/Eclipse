@@ -1,0 +1,5 @@
+﻿  GraphicsManager.cpp
+f:\vs_workspace\game_development_workspace\spacewars\spacewars\jni\graphicsmanager.cpp(125): warning C4102: '_ERROR_': unreferenced label
+f:\vs_workspace\game_development_workspace\spacewars\spacewars\jni\graphicsmanager.cpp(335): warning C4244: '=': conversion from 'float' to 'int32_t', possible loss of data
+  SpaceWars.vcxproj -> F:\vs_workspace\game_development_workspace\SpaceWars\Debug\SpaceWars.exe
+  SpaceWars.vcxproj -> F:\vs_workspace\game_development_workspace\SpaceWars\Debug\SpaceWars.pdb (Partial PDB)

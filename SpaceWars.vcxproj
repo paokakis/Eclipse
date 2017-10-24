@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9FE180FA-5BF2-41AC-87E8-A0D414D6268F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SpaceWars</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\vs_workspace\game_development_workspace\SpaceWars\SpaceWars\sources\pc\soil\src;F:\vs_workspace\game_development_workspace\SpaceWars\SpaceWars\sources\pc\Glfw\include\GLFW;F:\vs_workspace\game_development_workspace\SpaceWars\SpaceWars\sources\pc\Glew\include\GL;F:\vs_workspace\game_development_workspace\SpaceWars\SpaceWars\sources\Box2D;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>F:\vs_workspace\game_development_workspace\SpaceWars\SpaceWars\sources\pc\soil\lib;F:\vs_workspace\game_development_workspace\SpaceWars\SpaceWars\sources\pc\Glfw;F:\vs_workspace\game_development_workspace\SpaceWars\SpaceWars\sources\pc\Glew\lib\Release\Win32;C:\Program Files %28x86%29\OpenAL 1.1 SDK\libs\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;openal32.lib;glfw3.lib;SOIL.lib;glew32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="JNI\GraphicsManager.cpp" />
+    <ClCompile Include="JNI\Keyboard.cpp" />
+    <ClCompile Include="JNI\MoveableBody.cpp" />
+    <ClCompile Include="JNI\PhysicsManager.cpp" />
+    <ClCompile Include="JNI\Resource.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\b2BroadPhase.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\b2CollideCircle.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\b2CollideEdge.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\b2CollidePolygon.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\b2Collision.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\b2Distance.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\b2DynamicTree.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\b2TimeOfImpact.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\Shapes\b2ChainShape.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\Shapes\b2CircleShape.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\Shapes\b2EdgeShape.cpp" />
+    <ClCompile Include="sources\Box2D\Collision\Shapes\b2PolygonShape.cpp" />
+    <ClCompile Include="sources\Box2D\Common\b2BlockAllocator.cpp" />
+    <ClCompile Include="sources\Box2D\Common\b2Draw.cpp" />
+    <ClCompile Include="sources\Box2D\Common\b2Math.cpp" />
+    <ClCompile Include="sources\Box2D\Common\b2Settings.cpp" />
+    <ClCompile Include="sources\Box2D\Common\b2StackAllocator.cpp" />
+    <ClCompile Include="sources\Box2D\Common\b2Timer.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\b2Body.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\b2ContactManager.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\b2Fixture.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\b2Island.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\b2World.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\b2WorldCallbacks.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Contacts\b2CircleContact.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Contacts\b2Contact.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Contacts\b2ContactSolver.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Contacts\b2PolygonContact.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2DistanceJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2FrictionJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2GearJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2Joint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2MotorJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2MouseJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2PulleyJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2RopeJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2WeldJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Dynamics\Joints\b2WheelJoint.cpp" />
+    <ClCompile Include="sources\Box2D\Rope\b2Rope.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JNI\GraphicsManager.hpp" />
+    <ClInclude Include="JNI\Keyboard.hpp" />
+    <ClInclude Include="JNI\MoveableBody.hpp" />
+    <ClInclude Include="JNI\PhysicsManager.hpp" />
+    <ClInclude Include="JNI\Resource.hpp" />
+    <ClInclude Include="Log.hpp" />
+    <ClInclude Include="sources\Box2D\Box2D.h" />
+    <ClInclude Include="sources\Box2D\Collision\b2BroadPhase.h" />
+    <ClInclude Include="sources\Box2D\Collision\b2Collision.h" />
+    <ClInclude Include="sources\Box2D\Collision\b2Distance.h" />
+    <ClInclude Include="sources\Box2D\Collision\b2DynamicTree.h" />
+    <ClInclude Include="sources\Box2D\Collision\b2TimeOfImpact.h" />
+    <ClInclude Include="sources\Box2D\Collision\Shapes\b2ChainShape.h" />
+    <ClInclude Include="sources\Box2D\Collision\Shapes\b2CircleShape.h" />
+    <ClInclude Include="sources\Box2D\Collision\Shapes\b2EdgeShape.h" />
+    <ClInclude Include="sources\Box2D\Collision\Shapes\b2PolygonShape.h" />
+    <ClInclude Include="sources\Box2D\Collision\Shapes\b2Shape.h" />
+    <ClInclude Include="sources\Box2D\Common\b2BlockAllocator.h" />
+    <ClInclude Include="sources\Box2D\Common\b2Draw.h" />
+    <ClInclude Include="sources\Box2D\Common\b2GrowableStack.h" />
+    <ClInclude Include="sources\Box2D\Common\b2Math.h" />
+    <ClInclude Include="sources\Box2D\Common\b2Settings.h" />
+    <ClInclude Include="sources\Box2D\Common\b2StackAllocator.h" />
+    <ClInclude Include="sources\Box2D\Common\b2Timer.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\b2Body.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\b2ContactManager.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\b2Fixture.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\b2Island.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\b2TimeStep.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\b2World.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Contacts\b2CircleContact.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Contacts\b2Contact.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Contacts\b2ContactSolver.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Contacts\b2PolygonContact.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2DistanceJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2FrictionJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2GearJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2Joint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2MotorJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2MouseJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2PrismaticJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2PulleyJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2RevoluteJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2RopeJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2WeldJoint.h" />
+    <ClInclude Include="sources\Box2D\Dynamics\Joints\b2WheelJoint.h" />
+    <ClInclude Include="sources\Box2D\Rope\b2Rope.h" />
+    <ClInclude Include="sources\pc\Glew\include\GL\eglew.h" />
+    <ClInclude Include="sources\pc\Glew\include\GL\glew.h" />
+    <ClInclude Include="sources\pc\Glew\include\GL\glxew.h" />
+    <ClInclude Include="sources\pc\Glew\include\GL\wglew.h" />
+    <ClInclude Include="sources\pc\Glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="sources\pc\Glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="sources\pc\soil\src\SOIL.h" />
+    <ClInclude Include="Types.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sources\pc\Glew\doc\advanced.html" />
+    <None Include="sources\pc\Glew\doc\basic.html" />
+    <None Include="sources\pc\Glew\doc\build.html" />
+    <None Include="sources\pc\Glew\doc\credits.html" />
+    <None Include="sources\pc\Glew\doc\glew.html" />
+    <None Include="sources\pc\Glew\doc\glxew.html" />
+    <None Include="sources\pc\Glew\doc\index.html" />
+    <None Include="sources\pc\Glew\doc\install.html" />
+    <None Include="sources\pc\Glew\doc\log.html" />
+    <None Include="sources\pc\Glew\doc\wglew.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="sources\pc\Glew\lib\Release\Win32\glew32.lib" />
+    <Library Include="sources\pc\Glew\lib\Release\Win32\glew32s.lib" />
+    <Library Include="sources\pc\Glfw\glfw3.lib" />
+    <Library Include="sources\pc\soil\lib\SOIL.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
